@@ -1,5 +1,5 @@
 {
   "name": "Test extension",
   "id": 925461,
-  "selectedElements": [0x00FF00, 0xFF0000, 0x0000FF]
+  "selectedElements": [100, 200, 300]
 }
