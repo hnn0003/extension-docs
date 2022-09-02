@@ -1,5 +1,28 @@
 {
-  "name": "Test extension",
-  "id": 925461,
-  "selectedElements": [100, 200, 300]
+   "$schema": "https://raw.githubusercontent.com/hnn0003/extension-docs/main/schemaFile.json",
+   "title": "Example Schema",
+   "description": "An example schema",
+   "type": "object",
+	
+   "properties": {
+	
+      "zoomFactor": {
+         "description": "An integer representing the zoom factor. Values larger than 1.0 zoom in, and values smaller than 1.0 zoom out.",
+         "type": "number",
+         "minimum": 0,
+         "exclusiveMinimum": true
+      },
+		
+      "selectedElements": {
+         "description": "A string array of IDs for selected elements.",
+         "type": "array"
+      },
+		
+      "edgeType": {
+         "description": "An integer indicating the type of edges.",
+         "type": "integer"
+      }
+   },
+	
+   "required": ["zoomFactor", "selectedElements", "edgeType"]
 }
