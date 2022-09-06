@@ -1,5 +1,5 @@
 {
-   "$schema": "http://raw.githubusercontent.com/hnn0003/extension-docs/main/schemaFile.json",
+   "$schema": "http://json-schema.org/draft-04/schema#",
    "title": "Example Schema",
    "description": "An example schema",
    "type": "object",
