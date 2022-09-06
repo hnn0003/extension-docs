@@ -15,7 +15,11 @@
 		
       "selectedElements": {
          "description": "A string array of IDs for selected elements.",
-         "type": "array"
+         "type": "array",
+	  "items": {
+             "description": "IDs of selected elements",
+             "type": "string"
+          }
       },
 		
       "edgeType": {
