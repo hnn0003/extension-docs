@@ -1,5 +1,6 @@
 {
    "$schema": "http://json-schema.org/draft-04/schema#",
+   "$id": "http://json-schema.org/draft-04/schema#",
    "title": "Example Schema",
    "description": "An example schema",
    "type": "object",
@@ -8,9 +9,7 @@
 	
       "zoomFactor": {
          "description": "An integer representing the zoom factor. Values larger than 1.0 zoom in, and values smaller than 1.0 zoom out.",
-         "type": "number",
-         "minimum": 0,
-         "exclusiveMinimum": true
+         "type": "number"
       },
 		
       "selectedElements": {
