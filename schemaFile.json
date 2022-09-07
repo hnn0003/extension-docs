@@ -10,8 +10,22 @@
       "zoomFactor": {
          "description": "An integer representing the zoom factor. Values larger than 1.0 zoom in, and values smaller than 1.0 zoom out.",
          "type": "number"
+      },
+
+      "selectedElements": {
+         "description": "A string array of IDs for selected elements.",
+         "type": "array",
+	  "items": {
+             "description": "IDs of selected elements",
+             "type": "string"
+          }
+      },
+
+      "edgeType": {
+         "description": "An integer indicating the type of edges.",
+         "type": "integer"
       }
    },
 	
-   "required": ["zoomFactor"]
+   "required": ["zoomFactor", "selectedElements", "edgeType"]
 }
