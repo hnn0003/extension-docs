@@ -1,0 +1,27 @@
+{
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "$id": "http://raw.githubusercontent.com/hnn0003/extension-docs/main/PerModelCategoryVisibility_Schema.json",
+   "title": "PerModelCategoryVisibility Schema",
+   "description": "Per Model Category Visibility Props",
+   "type": "object",
+	
+   "properties": {
+	
+      "modelId": {
+         "description": "The model ID",
+         "type": "string"
+      },
+      
+      "categoryId": {
+         "description": "The category ID",
+         "type": "string"
+      },
+
+      "visible": {
+         "description": "A flag for the visibility. Should be true if category and model are visible.",
+         "type": "boolean"
+      }
+   },
+	
+   "required": ["modelId", "categoryId", "visible"]
+}
