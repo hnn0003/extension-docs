@@ -1,6 +1,6 @@
 {
    "$schema": "http://json-schema.org/draft-07/schema#",
-   "$id": "http://raw.githubusercontent.com/hnn0003/extension-docs/main/PerModelCategoryVisibility_Schema.json",
+   "$id": "http://raw.githubusercontent.com/hnn0003/extension-docs/main/PerModelCategoryVisibility.json",
    "title": "PerModelCategoryVisibility Schema",
    "description": "Per Model Category Visibility Props",
    "type": "object",
