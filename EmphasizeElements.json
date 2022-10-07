@@ -1,0 +1,69 @@
+{
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "$id": "http://raw.githubusercontent.com/hnn0003/extension-docs/main/EmphasizeElements.json",
+   "title": "Emphasize Elements Schema",
+   "description": "Emphasize Elements Props",
+   "type": "object",
+	
+   "properties": {
+
+      "emphasizeElementsProps": {
+         "description": "Emphasize Elements Properties.",
+         "type": "object",
+	       "properties": {
+            "neverDrawn": {
+               "type": "array",
+               "description": "Ids of elements that are never drawn.",
+               "items": {
+                  "type": "string"
+               }
+            },
+            "alwaysDrawn": {
+               "type": "array",
+               "description": "Ids of elements that are always drawn.",
+               "items": {
+                  "type": "string"
+               }
+            },
+            "isAlwaysDrawnExclusive": {
+               "type": "boolean"
+            },
+            "alwaysDrawnExclusiveEmphasized": {
+               "type": "array",
+               "description": "Ids of elements that are isolated and emphasized.",
+               "items": {
+                  "type": "string"
+               }
+            },
+            "defaultAppearance": { // in progress
+               "type": "object",
+               "description": "Default appearance of elements.",
+               "properties": {
+                  "type": "string"
+               },
+               "required": []
+            },
+            "appearanceOverride": { // in progress
+               "type": "array",
+               "description": "Appearance of overridden elements.",
+               "items": {
+                  "type": "object"
+               }
+            },
+            "wantEmphasis": {
+               "type": "boolean"
+            },
+           "unanimatedAppearance": { // in progress
+               "type": "object",
+               "description": "Default appearance of elements.",
+               "properties": {
+                  "type": "string"
+               },
+               "required": []
+            },
+         },
+         "required": []
+      }
+   },
+   "required": ["emphasizeElementsProps"]
+}
