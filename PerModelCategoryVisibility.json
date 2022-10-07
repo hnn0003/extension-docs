@@ -7,7 +7,7 @@
 	
    "properties": {
 
-   "perModelCategoryVisibilityProps": {
+      "perModelCategoryVisibilityProps": {
          "description": "A array of Per Model Category Visibility Properties.",
          "type": "array",
 	  "items": {
