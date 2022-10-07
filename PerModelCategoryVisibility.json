@@ -6,22 +6,31 @@
    "type": "object",
 	
    "properties": {
-	
-      "modelId": {
-         "description": "The model ID",
-         "type": "string"
-      },
-      
-      "categoryId": {
-         "description": "The category ID",
-         "type": "string"
-      },
 
-      "visible": {
-         "description": "A flag for the visibility. Should be true if category and model are visible.",
-         "type": "boolean"
-      }
+   "perModelCategoryVisibilityProps": {
+         "description": "A array of Per Model Category Visibility Properties.",
+         "type": "array",
+	  "items": {
+             "type": "object",
+             "properties": {
+                "modelId": {
+                   "description": "The model ID",
+                   "type": "string"
+                },
+      
+                "categoryId": {
+                   "description": "The category ID",
+                   "type": "string"
+                },
+
+                "visible": {
+                   "description": "A flag for the visibility. Should be true if category and model are visible.",
+                   "type": "boolean"
+                }
+	     },
+	     "required": ["modelId", "categoryId", "visible"]
+          }
+      },	
    },
-	
-   "required": ["modelId", "categoryId", "visible"]
+   "required": ["perModelCategoryVisibilityProps"]
 }
