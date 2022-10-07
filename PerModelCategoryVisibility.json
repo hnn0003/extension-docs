@@ -30,7 +30,7 @@
 	     },
 	     "required": ["modelId", "categoryId", "visible"]
           }
-      },	
+      }	
    },
    "required": ["perModelCategoryVisibilityProps"]
 }
