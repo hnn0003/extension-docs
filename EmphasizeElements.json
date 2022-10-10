@@ -93,22 +93,26 @@
                "type": "array",
                "description": "Appearance of overridden elements.",
                "items": {
-                  "overrideType": {
-                     "type": "number",
-                     "description": "Enum indicating whether to override color, transparency, or both."
-		  },
-		  "color": {
-                     "type": "number",
-                     "description": "The 0xTTBBGGRR format color/transparency value."
-		  },
-		  "ids": {
-                     "type": "array",
-                     "description": "The element IDs to display with the specified override.",
-                     "items": {
-	                "type": "string"
+                  "type": "object",
+		  "properties": {
+		     "overrideType": {
+                        "type": "number",
+                        "description": "Enum indicating whether to override color, transparency, or both."
+		     },
+		     "color": {
+                        "type": "number",
+                        "description": "The 0xTTBBGGRR format color/transparency value."
+		     },
+		     "ids": {
+                        "type": "array",
+                        "description": "The element IDs to display with the specified override.",
+                        "items": {
+	                   "type": "string"
+		        }
 		     }
-		  }
-               }
+                  },
+		  "required": []
+	       }
             },
             "wantEmphasis": {
                "type": "boolean"
