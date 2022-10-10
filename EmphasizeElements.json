@@ -10,7 +10,7 @@
       "emphasizeElementsProps": {
          "description": "Emphasize Elements Properties.",
          "type": "object",
-	       "properties": {
+	 "properties": {
             "neverDrawn": {
                "type": "array",
                "description": "Ids of elements that are never drawn.",
@@ -72,7 +72,7 @@
 		  },
 		  "linePixels": {
                      "type": "number",
-                     "description": "Enum indicating the line pixel drawing pattern.",
+                     "description": "Enum indicating the line pixel drawing pattern."
 		  },
 		  "ignoresMaterial": {
                      "type": "boolean",
@@ -95,7 +95,7 @@
                "items": {
                   "overrideType": {
                      "type": "number",
-                     "description": "Enum indicating whether to override color, transparency, or both.",
+                     "description": "Enum indicating whether to override color, transparency, or both."
 		  },
 		  "color": {
                      "type": "number",
@@ -150,7 +150,7 @@
 		  },
 		  "linePixels": {
                      "type": "number",
-                     "description": "Enum indicating the line pixel drawing pattern.",
+                     "description": "Enum indicating the line pixel drawing pattern."
 		  },
 		  "ignoresMaterial": {
                      "type": "boolean",
