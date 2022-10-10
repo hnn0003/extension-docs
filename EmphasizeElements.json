@@ -99,7 +99,7 @@
 		  },
 		  "color": {
                      "type": "number",
-                     "description": "The 0xTTBBGGRR format color/transparency value.",
+                     "description": "The 0xTTBBGGRR format color/transparency value."
 		  },
 		  "ids": {
                      "type": "array",
