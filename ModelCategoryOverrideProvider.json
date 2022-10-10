@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://raw.githubusercontent.com/hnn0003/extension-docs/main/EmphasizeElements.json",
+  "title": "Model Category Override Provider Schema",
+  "description": "Model Category Override Provider Props",
+  "type": "object",
+	
+  "properties": {
+    "modelCategoryOverrideProviderProps": {
+      "description": "Overrides given categories to provide emphasize functionality.",
+      "type": "object",
+	    "properties": {
+        "subCategoryOverrides": {
+          "type": "array",
+          "description": "Ids of elements that are never drawn.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "app": {
+                "type": "object",
+                "properties": {
+                  "rgb": {
+                    "type": "object",
+                    "description": "Rgb Color Properties",
+                    "properties": {
+                      "r": {
+                        "type": "number",
+                        "description": "Red numeric value."
+                      },
+                      "g": {
+			                  "type": "number",
+			                  "description": "Green numeric value."
+			                },
+			                "b": {
+			                  "type": "number",
+			                  "description": "Blue numeric value."
+			                }
+		                },
+		                "required": ["r", "g", "b"]
+		              },
+		              "weight": {
+                    "type": "number",
+                    "description": "Line weight."
+		              },
+		              "transparency": {
+                    "type": "number",
+                    "description": "Transparency numeric value."
+		              },
+		              "viewDependentTransparency": {
+                    "type": "boolean",
+                    "description": "Flag for view dependent transparency."
+		              },
+		              "linePixels": {
+                    "type": "number",
+                    "description": "Enum indicating the line pixel drawing pattern."
+		              },
+		              "ignoresMaterial": {
+                    "type": "boolean",
+                    "description": "Flag for ignoring material."
+		              },
+		              "nonLocatable": {
+                    "type": "boolean",
+                    "description": "Flag for non-locatable."
+		              },
+		              "emphasized": {
+                    "type": "boolean",
+                    "description": "Flag for emphasized."
+		              }
+                },
+                "required": []
+              }
+            },
+            "required": ["ids", "app"]
+          }
+        }
+      },
+      "required": []
+    }
+  },
+  "required": ["modelCategoryOverrideProviderProps"]
+}
