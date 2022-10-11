@@ -9,7 +9,7 @@
     "modelCategoryOverrideProviderProps": {
       "description": "Overrides given categories to provide emphasize functionality.",
       "type": "object",
-	    "properties": {
+      "properties": {
         "subCategoryOverrides": {
           "type": "array",
           "description": "Ids of elements that are never drawn.",
@@ -34,44 +34,44 @@
                         "description": "Red numeric value."
                       },
                       "g": {
-			                  "type": "number",
-			                  "description": "Green numeric value."
-			                },
-			                "b": {
-			                  "type": "number",
-			                  "description": "Blue numeric value."
-			                }
-		                },
-		                "required": ["r", "g", "b"]
-		              },
-		              "weight": {
+                        "type": "number",
+                        "description": "Green numeric value."
+                      },
+                      "b": {
+                        "type": "number",
+                        "description": "Blue numeric value."
+                      }
+                    },
+                    "required": ["r", "g", "b"]
+                  },
+                  "weight": {
                     "type": "number",
                     "description": "Line weight."
-		              },
-		              "transparency": {
+                  },
+                  "transparency": {
                     "type": "number",
                     "description": "Transparency numeric value."
-		              },
-		              "viewDependentTransparency": {
+                  },
+                  "viewDependentTransparency": {
                     "type": "boolean",
                     "description": "Flag for view dependent transparency."
-		              },
-		              "linePixels": {
+                  },
+                  "linePixels": {
                     "type": "number",
                     "description": "Enum indicating the line pixel drawing pattern."
-		              },
-		              "ignoresMaterial": {
+                  },
+                  "ignoresMaterial": {
                     "type": "boolean",
                     "description": "Flag for ignoring material."
-		              },
-		              "nonLocatable": {
+                  },
+                  "nonLocatable": {
                     "type": "boolean",
                     "description": "Flag for non-locatable."
-		              },
-		              "emphasized": {
+                  },
+                  "emphasized": {
                     "type": "boolean",
                     "description": "Flag for emphasized."
-		              }
+                  }
                 },
                 "required": []
               }
@@ -80,6 +80,203 @@
           }
         }
       },
+      "modelOverrides": {
+          "type": "array",
+          "description": "Ids of elements that are never drawn.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "app": {
+                "type": "object",
+                "properties": {
+                  "rgb": {
+                    "type": "object",
+                    "description": "Rgb Color Properties",
+                    "properties": {
+                      "r": {
+                        "type": "number",
+                        "description": "Red numeric value."
+                      },
+                      "g": {
+                        "type": "number",
+                        "description": "Green numeric value."
+                      },
+                      "b": {
+                        "type": "number",
+                        "description": "Blue numeric value."
+                      }
+                    },
+                    "required": ["r", "g", "b"]
+                  },
+                  "weight": {
+                    "type": "number",
+                    "description": "Line weight."
+                  },
+                  "transparency": {
+                    "type": "number",
+                    "description": "Transparency numeric value."
+                  },
+                  "viewDependentTransparency": {
+                    "type": "boolean",
+                    "description": "Flag for view dependent transparency."
+                  },
+                  "linePixels": {
+                    "type": "number",
+                    "description": "Enum indicating the line pixel drawing pattern."
+                  },
+                  "ignoresMaterial": {
+                    "type": "boolean",
+                    "description": "Flag for ignoring material."
+                  },
+                  "nonLocatable": {
+                    "type": "boolean",
+                    "description": "Flag for non-locatable."
+                  },
+                  "emphasized": {
+                    "type": "boolean",
+                    "description": "Flag for emphasized."
+                  }
+                },
+                "required": []
+              }
+            },
+            "required": ["ids", "app"]
+          }
+        }
+      },
+      "catEmphasisOverride": {
+        "type": "object",
+        "properties": {
+          "ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "app": {
+            "type": "object",
+            "properties": {
+              "rgb": {
+                "type": "object",
+                "description": "Rgb Color Properties",
+                "properties": {
+                  "r": {
+                    "type": "number",
+                    "description": "Red numeric value."
+                  },
+                  "g": {
+                    "type": "number",
+                    "description": "Green numeric value."
+                  },
+                  "b": {
+                    "type": "number",
+                    "description": "Blue numeric value."
+                  }
+                },
+                "required": ["r", "g", "b"]
+              },
+              "weight": {
+                "type": "number",
+                "description": "Line weight."
+              },
+              "transparency": {
+                "type": "number",
+                "description": "Transparency numeric value."
+              },
+              "viewDependentTransparency": {
+                "type": "boolean",
+                "description": "Flag for view dependent transparency."
+              },
+              "linePixels": {
+                "type": "number",
+                "description": "Enum indicating the line pixel drawing pattern."
+              },
+              "ignoresMaterial": {
+                "type": "boolean",
+                "description": "Flag for ignoring material."
+              },
+              "nonLocatable": {
+                "type": "boolean",
+                "description": "Flag for non-locatable."
+              },
+              "emphasized": {
+                "type": "boolean",
+                "description": "Flag for emphasized."
+              }
+            },
+            "required": []
+	  }
+	},
+      "modelEmphasizeOverride": {
+        "type": "object",
+        "properties": {
+          "ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "app": {
+            "type": "object",
+            "properties": {
+              "rgb": {
+                "type": "object",
+                "description": "Rgb Color Properties",
+                "properties": {
+                  "r": {
+                    "type": "number",
+                    "description": "Red numeric value."
+                  },
+                  "g": {
+                    "type": "number",
+                    "description": "Green numeric value."
+                  },
+                  "b": {
+                    "type": "number",
+                    "description": "Blue numeric value."
+                  }
+                },
+                "required": ["r", "g", "b"]
+              },
+              "weight": {
+                "type": "number",
+                "description": "Line weight."
+              },
+              "transparency": {
+                "type": "number",
+                "description": "Transparency numeric value."
+              },
+              "viewDependentTransparency": {
+                "type": "boolean",
+                "description": "Flag for view dependent transparency."
+              },
+              "linePixels": {
+                "type": "number",
+                "description": "Enum indicating the line pixel drawing pattern."
+              },
+              "ignoresMaterial": {
+                "type": "boolean",
+                "description": "Flag for ignoring material."
+              },
+              "nonLocatable": {
+                "type": "boolean",
+                "description": "Flag for non-locatable."
+              },
+              "emphasized": {
+                "type": "boolean",
+                "description": "Flag for emphasized."
+              }
+            },
+            "required": []
+	  }
+	}
+      }
       "required": []
     }
   },
