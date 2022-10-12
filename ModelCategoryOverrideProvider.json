@@ -275,9 +275,9 @@
             },
             "required": []
 	  }
-	}
+	},
+        "required": []
       }
-      "required": []
     }
   },
   "required": ["modelCategoryOverrideProviderProps"]
