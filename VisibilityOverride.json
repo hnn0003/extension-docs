@@ -282,5 +282,5 @@
       "required": []
 	  }
   },
-  "required": ["modelCategoryOverrideProviderProps"]
+  "required": ["visibilityOverrideProps"]
 }
