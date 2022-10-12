@@ -78,10 +78,7 @@
             },
             "required": ["ids", "app"]
           }
-        }
-      },
-      "required": []
-    },
+		},
     "modelOverrides": {
           "type": "array",
           "description": "Ids of elements that are never drawn.",
@@ -214,7 +211,7 @@
             "required": []
 	  }
 	},
-        "required": [],
+        "required": ["ids","app"]
       },
       "modelEmphasizeOverride": {
         "type": "object",
@@ -279,8 +276,11 @@
             "required": []
         }
       },
-      "required": []
+      "required": ["ids","app"]
     }
+	},
+      "required": []
+	  }
   },
   "required": ["modelCategoryOverrideProviderProps"]
 }
