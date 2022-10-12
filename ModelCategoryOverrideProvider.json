@@ -209,10 +209,10 @@
               }
             },
             "required": []
-	  }
-	},
-        "required": ["ids","app"]
+        }
       },
+      "required": ["ids","app"]
+    },
       "modelEmphasizeOverride": {
         "type": "object",
         "properties": {
