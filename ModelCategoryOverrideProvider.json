@@ -148,7 +148,7 @@
             "required": ["ids", "app"]
           }
       },
-      "catEmphasisOverride": {
+      "catEmphasizeOverride": {
         "type": "object",
         "properties": {
           "ids": {
